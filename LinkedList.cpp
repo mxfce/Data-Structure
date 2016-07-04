@@ -71,4 +71,5 @@ int main()
 	printf("\n");
 	list->insert(1,99);
 	list->printList();
+	
 }
