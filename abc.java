@@ -15,7 +15,7 @@ public class LinkedList
 		int i = 0;
 		Node itr = head;
 		Node newNode = new Node(null,_key);
-		if(index == size)
+		if(index >= size)
 		{
 			System.out.println("index out of bound.");
 			return ;
@@ -75,14 +75,15 @@ public class LinkedList
 		}
 		System.out.println();
 	}
-}
-class Node
-{
-	Node next;
-	int key;
-	Node(Node _next,int _key)
+	class Node
 	{
-		key = _key;
-		next = _next;
+		Node next;
+		int key;
+		Node(Node _next,int _key)
+		{
+			key = _key;
+			next = _next;
+		}
 	}
 }
+
